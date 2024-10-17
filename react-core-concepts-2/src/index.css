@@ -31,8 +31,34 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 4em;
+  padding: 40px;
+  border: 5px solid rebeccapurple;
+  border-radius: 10px;
+}
+
+h2 {
+  font-size: 2em;
+
+  padding: 5px;
+  border: 3px solid rgba(102, 51, 153, 0.582);
+  border-radius: 40px;
+}
+
+.friends {
+  padding: 20px;
+  margin: 14px;
+  border: 2px solid tomato;
+  border-radius: 10px;
+}
+.single-friend {
+  padding: 10px;
+  border: 1px solid rgba(121, 52, 52, 0.918);
+  border-radius: 10px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 button {
@@ -43,6 +69,7 @@ button {
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
+  margin: 10px;
   cursor: pointer;
   transition: border-color 0.25s;
 }

@@ -3,7 +3,9 @@
 // import viteLogo from "/vite.svg";
 import "./App.css";
 import Counter from "./Counter";
+import Friends from "./Friends";
 import Players from "./Players";
+import Users from "./Users";
 
 function App() {
   function handleClick() {
@@ -33,6 +35,10 @@ function App() {
       <h2>useState Hook</h2>
       <Players></Players>
       <Counter></Counter>
+      <h2>useEffect Hook</h2>
+      <h2>Data Loading</h2>
+      <Friends></Friends>
+      <Users></Users>
     </>
   );
 }

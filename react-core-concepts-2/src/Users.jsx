@@ -14,7 +14,7 @@ export default function Users() {
   return (
     <div className="friends">
       {users.map((user) => (
-        <User user={user}></User>
+        <User key={user} user={user}></User>
       ))}
     </div>
   );

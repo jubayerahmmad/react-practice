@@ -1,0 +1,55 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  /* color-scheme: light dark; */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+.button {
+  padding: 10px 30px;
+  /* background-color: rebeccapurple; */
+  font-size: 24px;
+  font-weight: 700;
+  color: rebeccapurple;
+  border: 2px solid rebeccapurple;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.btn-img {
+  height: 25px;
+  width: 25px;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: rgba(102, 51, 153, 0.13);
+}
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+.pet-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 20px;
+}
+.pets {
+  text-align: left;
+  padding: 10px;
+  border: 2px solid rebeccapurple;
+  margin: 10px;
+  border-radius: 20px;
+}

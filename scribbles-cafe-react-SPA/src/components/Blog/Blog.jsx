@@ -2,6 +2,7 @@ import PropTypes from "prop-types"; // ES6
 import { FaBookmark } from "react-icons/fa";
 const Blog = ({ blog, handleAddToBookmark, handleAddReadingTime }) => {
   const {
+    id,
     cover,
     title,
     author,
@@ -30,7 +31,7 @@ const Blog = ({ blog, handleAddToBookmark, handleAddReadingTime }) => {
             ))}
           </p>
           <button
-            onClick={() => handleAddReadingTime(reading_time)}
+            onClick={() => handleAddReadingTime(id, reading_time)}
             className="text-purple-700 p-2 border border-purple-700 rounded-md"
           >
             Mark as Read

@@ -1,4 +1,10 @@
 .cart-image img {
   width: 80px;
   margin: 10px;
+  display: flex;
+  align-items: center;
+}
+.cart-image-container {
+  display: flex;
+  align-items: center;
 }

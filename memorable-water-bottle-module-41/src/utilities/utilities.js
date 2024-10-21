@@ -18,4 +18,10 @@ const addToLocalStorage = (id) => {
   setLocalStorage(cart);
 };
 
-export { addToLocalStorage, getStoredCart };
+const removeFromLocalStorage = (id) => {
+  const cart = getStoredCart();
+  const remaining = cart.filter((idx) => idx !== id);
+  setLocalStorage(remaining);
+};
+
+export { addToLocalStorage, getStoredCart, removeFromLocalStorage };

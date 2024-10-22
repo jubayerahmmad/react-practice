@@ -22,13 +22,17 @@ const Header = () => {
       </div>
       <div className="navbar-end ">
         <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-            <button className="btn btn-ghost">
+          <div
+            tabIndex={0}
+            role="button"
+            className="btn btn-outline btn-circle bg-teal-500 lg:hidden"
+          >
+            <button>
               <i className="fa-solid fa-bars text-2xl"></i>
             </button>
           </div>
         </div>
-        <div className="hidden lg:flex">
+        <div className="hidden lg:flex gap-2">
           <div className="form-control ">
             <input
               type="text"
@@ -40,7 +44,7 @@ const Header = () => {
             <div
               tabIndex={0}
               role="button"
-              className="btn btn-ghost btn-circle avatar"
+              className="btn btn-ghost btn-circle bg-teal-500"
             >
               <div className="w-10 rounded-full">
                 <i className="fa-regular fa-user text-3xl"></i>

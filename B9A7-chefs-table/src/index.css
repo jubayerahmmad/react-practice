@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* * {
+  border: 3px solid indianred;
+} */
 body {
   font-family: "lexend";
 }

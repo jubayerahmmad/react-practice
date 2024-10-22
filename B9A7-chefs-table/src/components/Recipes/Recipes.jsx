@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-
-const Recipes = () => {
+import PropTypes from "prop-types";
+const Recipes = ({ addToQueue }) => {
   const [recipes, setRecipes] = useState([]);
 
   // fetch all recipes
@@ -11,7 +11,7 @@ const Recipes = () => {
   }, []);
 
   return (
-    <div className="md:w-2/3 p-6">
+    <div className="md:w-2/3 px-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {recipes.map((recipe, index) => (
           <div key={index} className="card bg-base-100 border border-gray-300">
@@ -51,7 +51,10 @@ const Recipes = () => {
                     <span>{recipe.calories} Calories.</span>
                   </div>
                 </div>
-                <button className="btn bg-teal-500 rounded-full">
+                <button
+                  onClick={() => addToQueue(recipe)}
+                  className="btn bg-teal-500 rounded-full"
+                >
                   Want to Cook
                 </button>
               </div>
@@ -61,6 +64,12 @@ const Recipes = () => {
       </div>
     </div>
   );
+};
+
+// PropTypes
+
+Recipes.propTypes = {
+  addToQueue: PropTypes.func.isRequired,
 };
 
 export default Recipes;

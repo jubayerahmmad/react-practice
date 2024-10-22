@@ -1,0 +1,94 @@
+{
+  "recipes": [
+    {
+      "recipe_image": "https://i.ibb.co.com/TbJZgnQ/Grilled-Basil-Garlic-Chicken-2.jpg",
+      "recipe_id": "001",
+      "recipe_name": "Grilled Chicken with Basil",
+      "short_description": "A healthy and flavorful grilled chicken dish with fresh basil and soy sauce.",
+      "ingredients": [
+        "550 g chicken",
+        "120 ml soy sauce",
+        "200 g basil leaves",
+        "400 g mushroom"
+      ],
+      "preparing_time": "30 min",
+      "calories": "320 calories"
+    },
+    {
+      "recipe_image": "ihttps://i.ibb.co.com/pv72hsY/Tofu-Stir-Fry-Thumbnail.jpg",
+      "recipe_id": "002",
+      "recipe_name": "Vegan Tofu Stir Fry",
+      "short_description": "A quick and nutritious vegan stir fry with tofu and mixed vegetables.",
+      "ingredients": [
+        "300 g tofu",
+        "100 ml soy sauce",
+        "200 g broccoli",
+        "150 g bell peppers",
+        "100 g carrots"
+      ],
+      "preparing_time": "20 min",
+      "calories": "250 calories"
+    },
+    {
+      "recipe_image": "https://i.ibb.co.com/tbJ6QCz/spaghetti-carbonara.jpg",
+      "recipe_id": "003",
+      "recipe_name": "Spaghetti Carbonara",
+      "short_description": "A creamy and rich Italian pasta dish made with eggs, cheese, pancetta, and pepper.",
+      "ingredients": [
+        "400 g spaghetti",
+        "100 g pancetta",
+        "3 eggs",
+        "100 g parmesan cheese",
+        "2 cloves garlic"
+      ],
+      "preparing_time": "25 min",
+      "calories": "450 calories"
+    },
+    {
+      "recipe_image": "https://i.ibb.co.com/bPbFPv4/Beef-Tacos.jpg",
+      "recipe_id": "004",
+      "recipe_name": "Beef Tacos",
+      "short_description": "Mexican-style beef tacos with fresh toppings and a spicy kick.",
+      "ingredients": [
+        "500 g ground beef",
+        "100 g taco seasoning",
+        "200 g tomatoes",
+        "100 g lettuce",
+        "100 g shredded cheese",
+        "12 taco shells"
+      ],
+      "preparing_time": "15 min",
+      "calories": "500 calories"
+    },
+    {
+      "recipe_image": "https://i.ibb.co.com/mR3Sn49/ceasar-salad-supreme-armag.jpg",
+      "recipe_id": "005",
+      "recipe_name": "Classic Caesar Salad",
+      "short_description": "A crisp and refreshing Caesar salad with homemade dressing.",
+      "ingredients": [
+        "200 g romaine lettuce",
+        "50 g croutons",
+        "50 g parmesan cheese",
+        "2 anchovy fillets",
+        "50 ml Caesar dressing"
+      ],
+      "preparing_time": "10 min",
+      "calories": "180 calories"
+    },
+    {
+      "recipe_image": "https://i.ibb.co.com/cXWMy3g/chocolate-brownie.jpg",
+      "recipe_id": "006",
+      "recipe_name": "Chocolate Brownies",
+      "short_description": "Rich and fudgy chocolate brownies, perfect for dessert.",
+      "ingredients": [
+        "200 g dark chocolate",
+        "100 g butter",
+        "150 g sugar",
+        "3 eggs",
+        "100 g flour"
+      ],
+      "preparing_time": "40 min",
+      "calories": "350 calories"
+    }
+  ]
+}

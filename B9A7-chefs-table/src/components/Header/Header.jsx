@@ -47,7 +47,7 @@ const Header = () => {
               className="btn btn-ghost btn-circle bg-teal-500"
             >
               <div className="w-10 rounded-full">
-                <i className="fa-regular fa-user text-3xl"></i>
+                <i className="fa-regular fa-user text-white text-3xl"></i>
               </div>
             </div>
           </div>

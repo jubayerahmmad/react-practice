@@ -8,7 +8,7 @@ const Buttons = () => {
     fetch("https://openapi.programming-hero.com/api/peddy/categories")
       .then((res) => res.json())
       .then((data) => setButton(data.categories));
-  });
+  }, []);
 
   return (
     <div className="buttons">

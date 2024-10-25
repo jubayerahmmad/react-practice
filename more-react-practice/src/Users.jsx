@@ -8,7 +8,7 @@ const Users = () => {
     fetch("https://openapi.programming-hero.com/api/peddy/pets")
       .then((res) => res.json())
       .then((data) => setPets(data.pets));
-  });
+  }, []);
 
   return (
     <div className="pet-container">

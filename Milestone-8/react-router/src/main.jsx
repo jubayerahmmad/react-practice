@@ -3,15 +3,52 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 // import App from "./App.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Home from "./components/Home";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Users from "./components/Users";
+import UserDetails from "./components/UserDetails";
+import Posts from "./components/Posts";
+import PostDetails from "./components/PostDetails";
+import ErrorPage from "./components/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello from React Router</div>,
-  },
-  {
-    path: "/about",
-    element: <div>I am in the about page</div>,
+    element: <Home></Home>,
+    errorElement: <ErrorPage></ErrorPage>,
+    children: [
+      {
+        path: "/about",
+        element: <About></About>,
+      },
+      {
+        path: "/contact",
+        element: <Contact></Contact>,
+      },
+      {
+        path: "/users",
+        loader: () => fetch("https://jsonplaceholder.typicode.com/users"),
+        element: <Users></Users>,
+      },
+      {
+        path: "/user/:userId",
+        loader: ({ params }) =>
+          fetch(`https://jsonplaceholder.typicode.com/users/${params.userId}`),
+        element: <UserDetails></UserDetails>,
+      },
+      {
+        path: "/posts",
+        loader: () => fetch("https://jsonplaceholder.typicode.com/posts"),
+        element: <Posts></Posts>,
+      },
+      {
+        path: "/post/:postId",
+        loader: ({ params }) =>
+          fetch(`https://jsonplaceholder.typicode.com/posts/${params.postId}`),
+        element: <PostDetails></PostDetails>,
+      },
+    ],
   },
 ]);
 

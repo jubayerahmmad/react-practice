@@ -9,15 +9,6 @@ const Header = () => {
         <NavLink to="/contact">Contact</NavLink>
         <NavLink to="/users">Users</NavLink>
         <NavLink to="/posts">Posts</NavLink>
-        {/* <a className="bg-blue-400 p-2" href="/">
-          Home
-        </a>
-        <a className="bg-blue-400 p-2" href="/about">
-          About
-        </a>
-        <a className="bg-blue-400 p-2" href="/contact">
-          Contact
-        </a> */}
       </nav>
     </div>
   );

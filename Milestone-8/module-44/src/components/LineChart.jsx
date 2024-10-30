@@ -4,6 +4,9 @@ import {
   Line,
   XAxis,
   YAxis,
+  BarChart,
+  Bar,
+  Tooltip,
 } from "recharts";
 
 const LineChart = () => {
@@ -25,8 +28,19 @@ const LineChart = () => {
         <Line dataKey="math" stroke="rebeccapurple"></Line>
         <Line dataKey="physics" stroke="teal"></Line>
         <Line dataKey="chemistry" stroke="magenta"></Line>
+        <Tooltip wrapperStyle={{ backgroundColor: "#d5d5d5" }} />
         <CartesianGrid></CartesianGrid>
       </LChart>
+
+      <BarChart width={500} height={400} data={mathMarks}>
+        <XAxis dataKey="name"></XAxis>
+        <YAxis></YAxis>
+        <Bar dataKey="math" stroke="rebeccapurple"></Bar>
+        {/* <Bar dataKey="physics" stroke="teal"></Bar> */}
+        {/* <Bar dataKey="chemistry" stroke="magenta"></Bar> */}
+        <Tooltip />
+        {/* <CartesianGrid></CartesianGrid> */}
+      </BarChart>
     </div>
   );
 };

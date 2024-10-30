@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import PropTypes from "prop-types";
 
 const Category = ({ category }) => {
   const { strCategory, strCategoryThumb, strCategoryDescription } = category;
@@ -25,6 +26,14 @@ const Category = ({ category }) => {
       </button>
     </div>
   );
+};
+
+Category.propTypes = {
+  category: PropTypes.shape({
+    strCategory: PropTypes.string.isRequired,
+    strCategoryThumb: PropTypes.string.isRequired,
+    strCategoryDescription: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default Category;

@@ -3,7 +3,7 @@ import MealsByCategory from "./MealsByCategory";
 
 const ShowAll = () => {
   const allMeals = useLoaderData();
-  console.log(allMeals);
+  // console.log(allMeals);
   return (
     <div>
       <div className="grid grid-cols-3 gap-6">

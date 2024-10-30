@@ -1,11 +1,14 @@
 import PropTypes from "prop-types";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 const MealsByCategory = ({ meals }) => {
-  const { strMeal, strMealThumb } = meals;
+  const { idMeal, strMeal, strMealThumb } = meals;
+  // console.log(meals);
+  const { mealCategory } = useParams();
+  // console.log(mealCategory);
   const navigate = useNavigate();
   const showDetails = () => {
-    navigate(`/categories/${strMeal}`);
+    navigate(`/categories/${mealCategory}/${idMeal}`);
   };
   return (
     <div>
@@ -30,6 +33,7 @@ const MealsByCategory = ({ meals }) => {
 
 MealsByCategory.propTypes = {
   meals: PropTypes.shape({
+    idMeal: PropTypes.string.isRequired,
     strMeal: PropTypes.string.isRequired,
     strMealThumb: PropTypes.string.isRequired,
   }).isRequired,

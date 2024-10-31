@@ -12,7 +12,7 @@ const RefForm = () => {
     console.log(passwordRef.current.value);
   };
   return (
-    <div>
+    <div className="p-4 border-2 rounded-xl">
       <h1 className="text-2xl">
         Using useRef hook(uncontrolled components) for getting the value
       </h1>

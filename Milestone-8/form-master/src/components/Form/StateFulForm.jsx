@@ -30,7 +30,7 @@ const StateFulForm = () => {
 
   return (
     <div>
-      <div>
+      <div className="p-4 border-2 rounded-xl">
         <h1 className="text-2xl">
           Using individual field state(controlled components) for getting the
           value

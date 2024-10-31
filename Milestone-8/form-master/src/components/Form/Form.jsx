@@ -5,7 +5,7 @@ const Form = () => {
     console.log(e.target.email.value);
   };
   return (
-    <div>
+    <div className="p-4 border-2 rounded-xl">
       <h1 className="text-2xl">
         Simple Process(onSubmit) of getting the value
       </h1>

@@ -4,6 +4,7 @@ import HookForm from "./components/Form/HookForm";
 import RefForm from "./components/Form/RefForm";
 import ReusableForm from "./components/Form/ReusableForm";
 import StateFulForm from "./components/Form/StateFulForm";
+import ComponentA from "./components/UseContext/ComponentA";
 
 function App() {
   const handleSignUpSubmit = (data) => {
@@ -14,6 +15,10 @@ function App() {
   };
   return (
     <>
+      <h1 className="text-4xl font-extrabold my-6">
+        Exploring useContext,Context API
+      </h1>
+      <ComponentA></ComponentA>
       <h1 className="text-4xl font-extrabold my-6">
         Form Handling in Different Ways
       </h1>
